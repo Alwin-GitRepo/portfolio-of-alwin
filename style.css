@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+body{
+    height: 1000px;
+}
+
+nav{
+    background-color: rgb(230, 135, 46);
+    display: flex;
+    justify-content: end;
+    height: 50px;
+}
+
+#sticky{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+   
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav ul li a{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: rgb(3, 0, 5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: x-small;
+}
+
+span{
+    color: red;
+}
+h1{
+    color: rgb(229, 229, 239);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+#home::before{
+    content: '';
+    position: absolute;
+    background-image: url("https://wallpapercave.com/wp/wp10475031.jpg");
+    width:100% ;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.main{
+    /* border: 3px solid rgb(164, 40, 181); */
+    border: 3px none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    font-size: larger;
+    z-index: -1;
+    /* box-shadow: 5px; */
+}
+
+h1,span{
+    font-family: 'Caprasimo', cursive;
+}
+
+#about{
+    text-align: center;
+    color: black;
+    
+    
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+p{
+    text-align: justify;
+    display: flex;
+    height: 200px;
+    width: 650px;
+    margin: 20px;
+}
+
+.heading{
+    color: red;
+    text-align: center;
+}
+
+h3{
+    text-align: left;
+}
+
+.gallery{
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.gallery img{
+    width: 190px;
+    height: 100px;
+    margin: 20px;
+    margin-left: 50px;
+
+}
+
+.gallery img:hover{
+    width: 210px;
+    border: 2px solid black;
+
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    width: 180px;
+    height: 300px;
+    margin: 5px;
+    border: 3px solid black;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    padding: 3px;
+    box-shadow: 3px;
+    background: linear-gradient( to top,rgb(38, 124, 177) 50%,white 50%);
+    transition: all 0.8s;
+    background-size: 100% 200%;
+}
+
+.box:hover{
+    background-position: left bottom;
+}
+
+.box img{
+    width: 180px;
+    height: 100px;
+}
+
+.box h3{
+    text-align: center;
+    color: rgb(231, 27, 220);
+}
+
+.box p{
+    text-align: justify;
+    width: 100%;
+    height: 50px;
+    font-size: small;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    margin-left: 300px;
+    margin-bottom: 5px;
+    
+}
+.button{
+    background-color: rgb(137, 40, 186);
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: rgb(156, 195, 236);
+    }
+    nav{
+        width: 400px;
+        text-align: center;
+    }
+    #home{
+        background-size: 400px;
+        background-position: right;
+    }
+    #about{
+        width: 400px;
+        height: 320px;
+    }
+    .pic{
+        flex-wrap: wrap;
+
+    }
+    .intro{
+        width: 390px;
+        height: 200px;
+    }
+    #about h3{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: 800;
+        
+    }
+    #about img{
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 120px;
+
+        
+    }
+    #about p{
+        width: 380px;
+        overflow-wrap: break-word;
+        font-size: xx-small;
+        
+    }
+    #project .gallery{
+        justify-content: center;
+        margin: 10px;
+    }
+    #project img{
+        margin-left: 75px;
+        width: 250px;
+    }
+    #services{
+        justify-content: center;
+        
+    }
+    #services .row{
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-top: 10px;       
+    }
+    #services .box{
+        width: 250px;
+        height: 250px;
+    }
+    #contact{
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .button{
+        background-color: rgb(137, 40, 186);
+    }
+  }
+
